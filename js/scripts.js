@@ -1,9 +1,18 @@
 console.log('hello');
 
-const firstButton = document.getElementById('selectedUser')
+// const firstButton = document.getElementById('selectedUser')
+// const quantityForm = document.getElementById('quantity')
 
-const users = [];
+var usernameList = document.getElementById('username_list')
 
-function userSelected() {
-    firstButton.add('hide')
-}
+alert("#username_list".value)
+
+
+// let strUser = usernameList.value;
+
+// const users = [];
+
+// function userSelected() {
+//     firstButton.add('hide')
+// }
+
