@@ -5,7 +5,7 @@ console.log('hello');
 
 var usernameList = document.getElementById('username_list')
 
-alert("#username_list".value)
+// alert("#username_list".value)
 
 
 // let strUser = usernameList.value;
