@@ -2,8 +2,10 @@ console.log('hello');
 
 // const firstButton = document.getElementById('selectedUser')
 // const quantityForm = document.getElementById('quantity')
-
+const howMany = document.getElementById('quantity')
 var usernameList = document.getElementById('username_list')
+
+
 
 // alert("#username_list".value)
 
