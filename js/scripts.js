@@ -1,33 +1,14 @@
-console.log('hello');
-
-// const firstButton = document.getElementById('selectedUser')
-// const quantityForm = document.getElementById('quantity')
-// var howMany = document.getElementById('howMany')
-var usernameList = document.getElementById('username_list')
-
-
-
-
+const usernameList = document.getElementById('username_list');
 var today = new Date();
-
 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 
-// document.getElementById("showDate").innerHTML = date;
-
-console.log(today);
-
 document.getElementById("showDate").innerHTML = date;
-// alert("#username_list".value)
 
+var quantity = document.getElementById('howMany').value
 var itemLink = document.getElementById('link').value;
-console.log(itemLink)
-
-
-// let strUser = usernameList.value;
-
-// const users = [];
-
-// function userSelected() {
-//     firstButton.add('hide')
-// }
-
+var currentUsername = document.getElementById('username_list').value
+console.log(currentUsername);
+console.log(itemLink);
+console.log(quantity);
+console.log(today);
+console.log('hello, you reached the end of the Script');
