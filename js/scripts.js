@@ -19,4 +19,9 @@ var updateUsername = document.getElementById('username_list').addEventListener('
     console.log(e.target.options[e.target.selectedIndex].getAttribute('id'));
 });
 
+var updatePrio = document.getElementById('priority_list').addEventListener('change', function(e) {
+    console.log(e.target.options[e.target.selectedIndex].getAttribute('id'));
+});
+
+
 console.log('hello, you reached the end of the Script');
