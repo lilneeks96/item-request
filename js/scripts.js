@@ -13,4 +13,10 @@ console.log(currentPriority.value);
 console.log(itemLink);
 console.log(quantity);
 console.log(today);
+
+
+var updateUsername = document.getElementById('username_list').addEventListener('change', function(e) {
+    console.log(e.target.options[e.target.selectedIndex].getAttribute('id'));
+});
+
 console.log('hello, you reached the end of the Script');
