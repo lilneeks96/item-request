@@ -7,6 +7,16 @@ var usernameList = document.getElementById('username_list')
 
 
 
+
+var today = new Date();
+
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+
+// document.getElementById("showDate").innerHTML = date;
+
+console.log(today);
+
+document.getElementById("showDate").innerHTML = date;
 // alert("#username_list".value)
 
 
