@@ -19,6 +19,9 @@ console.log(today);
 document.getElementById("showDate").innerHTML = date;
 // alert("#username_list".value)
 
+var itemLink = document.getElementById('link').value;
+console.log(itemLink)
+
 
 // let strUser = usernameList.value;
 
