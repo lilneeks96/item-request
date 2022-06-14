@@ -23,5 +23,14 @@ var updatePrio = document.getElementById('priority_list').addEventListener('chan
     console.log(e.target.options[e.target.selectedIndex].getAttribute('id'));
 });
 
+var updateLink = document.getElementById('howMany').addEventListener('change', function(e) {
+    console.log(e.target[e.target.selectedIndex].getAttribute('value'));
+});
+
+
+// function val() {
+//     d = document.getElementById("howMany").value;
+//     alert(d);
+// }
 
 console.log('hello, you reached the end of the Script');
