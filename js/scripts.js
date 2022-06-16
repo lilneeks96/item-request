@@ -13,7 +13,7 @@ var itemLink = document.getElementById('link');
 var currentUsername = document.getElementById('username_list');
 var currentPriority = document.getElementById('priority_list');
 console.log(currentUsername);
-console.log(currentPriority);
+// console.log(currentPriority);
 console.log(itemLink);
 console.log(quantity);
 console.log(today);
