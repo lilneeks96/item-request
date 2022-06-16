@@ -1,3 +1,7 @@
+// function refreshPage(){
+//   window.location.reload();
+// } 
+
 const usernameList = document.getElementById('username_list');
 var today = new Date();
 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
@@ -23,9 +27,9 @@ var dateData = today;
 
 // [currentUsername, currentPriority, itemLink, quantity, today];
 
-// function clickMe(){
-//     console.log('submitted');
-// }
+function clickMe(){
+    console.log('submitted');
+}
 
 // document.getElementById("done").addEventListener("click", clickMe);
 
