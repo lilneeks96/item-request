@@ -14,9 +14,22 @@ console.log(itemLink);
 console.log(quantity);
 console.log(today);
 
+function clickMe(){
+    console.log('hi');
+}
+
+document.getElementById("done").addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("paste").innerHTML = currentUsername.value;
+  
+}
+
 
 var updateUsername = document.getElementById('username_list').addEventListener('change', function(e) {
     console.log(e.target.options[e.target.selectedIndex].getAttribute('id'));
 });
+
+
 
 console.log('hello, you reached the end of the Script');
