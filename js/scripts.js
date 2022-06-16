@@ -14,7 +14,7 @@ console.log(itemLink);
 console.log(quantity);
 console.log(today);
 
-var itemDisplay = itemLink.value;
+// var itemDisplay = itemLink.value;
 var howManyDisplay = quantity.value;
 var submitUsername = currentUsername;
 var submitPriority = currentPriority
@@ -23,11 +23,11 @@ var dateData = today;
 
 // [currentUsername, currentPriority, itemLink, quantity, today];
 
-function clickMe(){
-    console.log('submitted');
-}
+// function clickMe(){
+//     console.log('submitted');
+// }
 
-document.getElementById("done").addEventListener("click", clickMe);
+// document.getElementById("done").addEventListener("click", clickMe);
 
 // function myFunction() {
     
@@ -67,12 +67,28 @@ function updateValue(e) {
   window.open(url);
 }
 
+
+
+
 // const link = document.getElementById("link");
 // const button = document.getElementById("done");
 // button.addEventListener("click", event => {
 //   const url = link.value;
 //   window.open(url);
 // });
+
+
+function removeHttp(url) {
+  return url.replace(/^https?:\/\//, '');
+}
+
+// 👇️ "example.com"
+console.log(removeHttp('http://www.amazon.com'));
+
+// 👇️ "example.com"
+console.log(removeHttp('http://example.com'));
+
+
 
 
 var urlList = [];
@@ -89,7 +105,7 @@ function getUrlList() {
 
   urlList.push(url);
   for (i = 0; i < urlList.length; i++) {
-    thisList += "<a target='blank' href='http://" + urlList[i].urlhtml + "'>" + urlList[i].urlhtml + "</a><br>";
+    thisList += "<a target='blank' href='" + urlList[i].urlhtml + "'>" + urlList[i].urlhtml + "</a><br>";
   }
   document.getElementById("showurls").innerHTML = thisList;
 }
