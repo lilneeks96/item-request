@@ -6,13 +6,17 @@ document.getElementById("showDate").innerHTML = date;
 
 var quantity = document.getElementById('howMany').value;
 var itemLink = document.getElementById('link').value;
-var currentUsername = document.getElementById('username_list');
-var currentPriority = document.getElementById('priority_list');
-console.log(currentUsername.value);
-console.log(currentPriority.value);
+var currentUsername = document.getElementById('username_list').value;
+var currentPriority = document.getElementById('priority_list').value;
+console.log(currentUsername);
+console.log(currentPriority);
 console.log(itemLink);
 console.log(quantity);
 console.log(today);
+
+var allData = today;
+
+// [currentUsername, currentPriority, itemLink, quantity, today];
 
 function clickMe(){
     console.log('hi');
@@ -21,8 +25,8 @@ function clickMe(){
 document.getElementById("done").addEventListener("click", myFunction);
 
 function myFunction() {
-  document.getElementById("paste").innerHTML = currentUsername.value;
-  
+    
+    document.getElementById("paste").innerHTML = allData;
 }
 
 
