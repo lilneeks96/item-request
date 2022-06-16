@@ -83,15 +83,14 @@ var updateDate = document.getElementById("howMany").addEventListener('change', f
 // function removeHttp(url) {
 //   var url = document.getElementById('urlhtml');
 //   return url.replace(/^https?:\/\//, '');
-
 // }
 
-function clickMe(){
+// function clickMe(){
 
-  console.log('submitted');
-}
+//   console.log('submitted');
+// }
 
-// // 👇️ "example.com"
+// 👇️ "example.com"
 // console.log(removeHttp('http://www.amazon.com'));
 
 // // 👇️ "example.com"
@@ -102,10 +101,7 @@ function clickMe(){
 
 var urlList = [];
 
-function getUrlList(urlLink) {
-  var urlLink = document.getElementById('urlhtml');
-
-
+function getUrlList() {
   var url = {
     urlhtml
   };
@@ -120,7 +116,7 @@ function getUrlList(urlLink) {
   }
   
   document.getElementById("showurls").innerHTML = thisList;
-  return urlLink.replace(/^https?:\/\//, '');
+
   
   
 }
