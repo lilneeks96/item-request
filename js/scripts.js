@@ -34,6 +34,23 @@ var updateUsername = document.getElementById('username_list').addEventListener('
     console.log(e.target.options[e.target.selectedIndex].getAttribute('id'));
 });
 
+<<<<<<< HEAD
 
 
+=======
+var updatePrio = document.getElementById('priority_list').addEventListener('change', function(e) {
+    console.log(e.target.options[e.target.selectedIndex].getAttribute('id'));
+});
+
+var updateLink = document.getElementById('howMany').addEventListener('change', function(e) {
+    console.log(e.target[e.target.selectedIndex].getAttribute('value'));
+});
+
+
+// function val() {
+//     d = document.getElementById("howMany").value;
+//     alert(d);
+// }
+
+>>>>>>> e773ce3f95eb81ea2c406e42c9baea2f3132f304
 console.log('hello, you reached the end of the Script');
