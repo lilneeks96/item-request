@@ -27,9 +27,7 @@ var dateData = today;
 
 // [currentUsername, currentPriority, itemLink, quantity, today];
 
-function clickMe(){
-    console.log('submitted');
-}
+
 
 // document.getElementById("done").addEventListener("click", clickMe);
 
@@ -49,10 +47,10 @@ var updateUsername = document.getElementById('username_list').addEventListener('
     
 });
 
-var updatePriority = document.getElementById('priority_list').addEventListener('change', function(e) {
-    document.getElementById("priority_display").innerHTML = (e.target.options[e.target.selectedIndex].getAttribute('id'));
+// var updatePriority = document.getElementById('priority_list').addEventListener('change', function(e) {
+//     document.getElementById("priority_display").innerHTML = (e.target.options[e.target.selectedIndex].getAttribute('id'));
     
-});
+// });
 
 
 var updateDate = document.getElementById("howMany").addEventListener('change', function(e) {
@@ -82,22 +80,31 @@ var updateDate = document.getElementById("howMany").addEventListener('change', f
 // });
 
 
-function removeHttp(url) {
-  return url.replace(/^https?:\/\//, '');
+// function removeHttp(url) {
+//   var url = document.getElementById('urlhtml');
+//   return url.replace(/^https?:\/\//, '');
+
+// }
+
+function clickMe(){
+
+  console.log('submitted');
 }
 
-// 👇️ "example.com"
-console.log(removeHttp('http://www.amazon.com'));
+// // 👇️ "example.com"
+// console.log(removeHttp('http://www.amazon.com'));
 
-// 👇️ "example.com"
-console.log(removeHttp('http://example.com'));
+// // 👇️ "example.com"
+// console.log(removeHttp('http://example.com'));
 
 
 
 
 var urlList = [];
 
-function getUrlList() {
+function getUrlList(urlLink) {
+  var urlLink = document.getElementById('urlhtml');
+
 
   var url = {
     urlhtml
@@ -111,7 +118,11 @@ function getUrlList() {
   for (i = 0; i < urlList.length; i++) {
     thisList += "<a target='blank' href='" + urlList[i].urlhtml + "'>" + urlList[i].urlhtml + "</a><br>";
   }
+  
   document.getElementById("showurls").innerHTML = thisList;
+  return urlLink.replace(/^https?:\/\//, '');
+  
+  
 }
 
 function clearURL(){
