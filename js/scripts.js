@@ -57,15 +57,15 @@ var updateDate = document.getElementById("howMany").addEventListener('change', f
 });
 
 
-const input = document.querySelector('input');
-const log = document.getElementById('log');
+// const input = document.querySelector('input');
+// const log = document.getElementById('log');
 
-input.addEventListener('change', updateValue);
-function updateValue(e) {
-  log.textContent = e.target.value;
-  const url = link.value;
-  window.open(url);
-}
+// input.addEventListener('change', updateValue);
+// function updateValue(e) {
+//   log.textContent = e.target.value;
+//   const url = link.value;
+//   window.open(url);
+// }
 
 
 
@@ -109,6 +109,11 @@ function getUrlList() {
   }
   document.getElementById("showurls").innerHTML = thisList;
 }
+
+function clearURL(){
+  urlList.length = 0;
+}
+
 
 // var rosterListings = "";
 //     for (var i = 0; i < teamRoster.length; i++) {
