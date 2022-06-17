@@ -127,6 +127,9 @@ var updateDate = document.getElementById("howMany").addEventListener('change', f
   
 // }
 
+
+const addItem = document.querySelector("#form"); addItem.addEventListener("submit", (e) => { e.preventDefault(); });
+
 var urlList = [];
 
 function ValidURL(str) {
@@ -149,7 +152,7 @@ function ValidURL(str) {
           }
           
           document.getElementById("showurls").innerHTML = thisList;
-      console.log('function completed')
+      console.log('function cosmpleted')
     }
   }
 
