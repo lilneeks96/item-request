@@ -1,8 +1,7 @@
 // function refreshPage(){
 //   window.location.reload();
 // } 
-
-const usernameList = document.getElementById('username_list');
+var usernameList = document.getElementById('username_list');
 var today = new Date();
 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 
@@ -127,6 +126,31 @@ function getUrlList() {
   
   
 }
+
+function ValidURL(str) {
+    str =  document.getElementById('urlhtml').value;
+    var regex = /(?:https?):\/\/(\w+:?\w*)?(\S+)(:\d+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/;
+    if(!regex .test(str)) {
+      alert("Please include HTTPS://");
+      return false;
+    } else {
+        var str = {
+            urlhtml
+          };
+          var i = 0;
+          var thisList = "";
+        
+          str.urlhtml = document.getElementById("urlhtml").value;
+        
+          urlList.push(str);
+          for (i = 0; i < urlList.length; i++) {
+            thisList += "<a target='blank' href='" + urlList[i].urlhtml + "'>" + urlList[i].urlhtml + "</a><br>";
+          }
+          
+          document.getElementById("showurls").innerHTML = thisList;
+      
+    }
+  }
 
 
 
