@@ -105,34 +105,35 @@ var updateDate = document.getElementById("howMany").addEventListener('change', f
 // alert(setHttp("www.amazon.com"));
 
 
+
+
+// function getUrlList() {
+//   var url = {
+//     urlhtml
+//   };
+//   var i = 0;
+//   var thisList = "";
+
+//   url.urlhtml = document.getElementById("urlhtml").value;
+
+//   urlList.push(url);
+//   for (i = 0; i < urlList.length; i++) {
+//     thisList += "<a target='blank' href='" + urlList[i].urlhtml + "'>" + urlList[i].urlhtml + "</a><br>";
+//   }
+  
+//   document.getElementById("showurls").innerHTML = thisList;
+
+  
+  
+// }
+
 var urlList = [];
-
-function getUrlList() {
-  var url = {
-    urlhtml
-  };
-  var i = 0;
-  var thisList = "";
-
-  url.urlhtml = document.getElementById("urlhtml").value;
-
-  urlList.push(url);
-  for (i = 0; i < urlList.length; i++) {
-    thisList += "<a target='blank' href='" + urlList[i].urlhtml + "'>" + urlList[i].urlhtml + "</a><br>";
-  }
-  
-  document.getElementById("showurls").innerHTML = thisList;
-
-  
-  
-}
 
 function ValidURL(str) {
     str =  document.getElementById('urlhtml').value;
     var regex = /(?:https?):\/\/(\w+:?\w*)?(\S+)(:\d+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/;
     if(!regex .test(str)) {
       alert("Please include HTTPS://");
-      return false;
     } else {
         var str = {
             urlhtml
@@ -148,7 +149,7 @@ function ValidURL(str) {
           }
           
           document.getElementById("showurls").innerHTML = thisList;
-      
+      console.log('function completed')
     }
   }
 
