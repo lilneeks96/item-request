@@ -14,7 +14,7 @@ var itemLink = document.getElementById('link');
 var currentUsername = document.getElementById('username_list');
 var currentPriority = document.getElementById('priority_list');
 console.log(currentUsername);
-// console.log(currentPriority);
+console.log(currentPriority);
 console.log(itemLink);
 console.log(quantity);
 console.log(today);
@@ -134,6 +134,29 @@ const addItem = document.querySelector("#form"); addItem.addEventListener("submi
 
 var urlList = [];
 
+function getUrlList() {
+  var url = {
+    urlhtml
+  };
+  var i = 0;
+  var thisList = "";
+
+  url.urlhtml = document.getElementById("urlhtml").value;
+
+  urlList.push(url);
+  for (i = 0; i < urlList.length; i++) {
+    thisList += "<a target='blank' href='" + urlList[i].urlhtml + "'>" + urlList[i].urlhtml + "</a><br>";
+  }
+  
+  document.getElementById("showurls").innerHTML = thisList;
+
+  
+  
+}
+
+function clearURL(){
+  urlList.length = 0;
+}
 function ValidURL(str) {
     str =  document.getElementById('urlhtml').value;
     var regex = /(?:https?):\/\/(\w+:?\w*)?(\S+)(:\d+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/;
