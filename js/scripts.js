@@ -1,3 +1,5 @@
+let defaultAmount = 1;
+
 // function refreshPage(){
 //   window.location.reload();
 // } 
