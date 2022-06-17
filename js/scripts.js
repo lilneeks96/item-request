@@ -96,30 +96,44 @@ var updateDate = document.getElementById("howMany").addEventListener('change', f
 // // 👇️ "example.com"
 // console.log(removeHttp('http://example.com'));
 
-
+function setHttp(urlhtml) {
+  if (urlhtml.search(/^http[s]?\:\/\//) == -1) {
+    urlhtml = 'http://' + urlhtml;
+  }
+  return urlhtml;
+}
+// alert(setHttp("www.amazon.com"));
 
 
 var urlList = [];
 
-function getUrlList() {
+function getUrlList(url) {
+  
+  
   var url = {
     urlhtml
   };
+  setHttp(url)
   var i = 0;
   var thisList = "";
 
   url.urlhtml = document.getElementById("urlhtml").value;
+  setHttp(url);
+  // setHttp(url);
 
   urlList.push(url);
   for (i = 0; i < urlList.length; i++) {
     thisList += "<a target='blank' href='" + urlList[i].urlhtml + "'>" + urlList[i].urlhtml + "</a><br>";
   }
-  
-  document.getElementById("showurls").innerHTML = thisList;
 
   
   
+  document.getElementById("showurls").innerHTML = thisList;
+  
 }
+
+
+
 
 function clearURL(){
   urlList.length = 0;
