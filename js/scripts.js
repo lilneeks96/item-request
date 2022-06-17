@@ -1,8 +1,9 @@
+let defaultAmount = 1;
+
 // function refreshPage(){
 //   window.location.reload();
 // } 
-
-const usernameList = document.getElementById('username_list');
+var usernameList = document.getElementById('username_list');
 var today = new Date();
 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 
@@ -96,8 +97,40 @@ var updateDate = document.getElementById("howMany").addEventListener('change', f
 // // 👇️ "example.com"
 // console.log(removeHttp('http://example.com'));
 
+// function setHttp(urlhtml) {
+//   this = document.getElementById('urlhtml');
+//   if (urlhtml.search(/^http[s]?\:\/\//) == -1) {
+//     urlhtml = 'http://' + urlhtml;
+//   }
+//   return urlhtml;
+// }
+// alert(setHttp("www.amazon.com"));
 
 
+
+
+// function getUrlList() {
+//   var url = {
+//     urlhtml
+//   };
+//   var i = 0;
+//   var thisList = "";
+
+//   url.urlhtml = document.getElementById("urlhtml").value;
+
+//   urlList.push(url);
+//   for (i = 0; i < urlList.length; i++) {
+//     thisList += "<a target='blank' href='" + urlList[i].urlhtml + "'>" + urlList[i].urlhtml + "</a><br>";
+//   }
+  
+//   document.getElementById("showurls").innerHTML = thisList;
+
+  
+  
+// }
+
+
+const addItem = document.querySelector("#form"); addItem.addEventListener("submit", (e) => { e.preventDefault(); });
 
 var urlList = [];
 
@@ -124,6 +157,36 @@ function getUrlList() {
 function clearURL(){
   urlList.length = 0;
 }
+function ValidURL(str) {
+    str =  document.getElementById('urlhtml').value;
+    var regex = /(?:https?):\/\/(\w+:?\w*)?(\S+)(:\d+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/;
+    if(!regex .test(str)) {
+      alert("Please include HTTPS://");
+    } else {
+        var str = {
+            urlhtml
+          };
+          var i = 0;
+          var thisList = "";
+        
+          str.urlhtml = document.getElementById("urlhtml").value;
+        
+          urlList.push(str);
+          for (i = 0; i < urlList.length; i++) {
+            thisList += "<a target='blank' href='" + urlList[i].urlhtml + "'>" + urlList[i].urlhtml + "</a><br>";
+          }
+          
+          document.getElementById("showurls").innerHTML = thisList;
+      console.log('function cosmpleted')
+    }
+  }
+
+
+
+
+// function clearURL(){
+//   urlList.length = 0;
+// }
 
 
 // var rosterListings = "";
