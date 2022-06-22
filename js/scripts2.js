@@ -50,24 +50,24 @@ window.addEventListener('load', () => {
 
 		list_el.appendChild(task_el);
 
-		input.value = '';
+		let rawValue = input.value ;
+
+    rawValue = [];
 
 
 
 
 // NEED HELP HERE
 
-    rawValue = document.getElementsByClassName("text").value;
+    rawValue = document.getElementsByClassName("text");
 
-    displayList = rawValue
     
     var id = document.getElementsByClassName("text");
-    if (id.length > 0) {
-        alert (id[0].value);
+    for (let i = 0; i < rawValue.length; i++ )
+    { 
+      console.log(rawValue[i].value);
     }
     
-    
-
 
 		task_edit_el.addEventListener('click', (e) => {
 			if (task_edit_el.innerText.toLowerCase() == "edit") {
@@ -82,6 +82,10 @@ window.addEventListener('load', () => {
 
 		task_delete_el.addEventListener('click', (e) => {
 			list_el.removeChild(task_el);
+
+
+      console.log(list_el);
+
 		});
 	});
 });
