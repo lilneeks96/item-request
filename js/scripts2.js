@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
 		const task = input.value;
 
     if (!task) {
-      alert("Error::Empty Form")
+      alert("ERROR!")
       return;
     }
 
