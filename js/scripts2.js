@@ -1,5 +1,7 @@
 
 
+
+
 window.addEventListener('load', () => {
 	const form = document.querySelector("#new-task-form");
 	const input = document.querySelector("#new-task-input");
@@ -16,7 +18,24 @@ window.addEventListener('load', () => {
     }
 
 
+	var itemList = document.getElementsByClassName("text");
+	[].forEach.call(itemList, function(el) {
+		// print(el.value);
+		
+	});
+		  
 
+	
+	const form = document.getElementById('new-task-form');
+	form.addEventListener('submit', function handleSubmit() {
+
+	
+	  // 👇️ Send data to server here
+	
+	  // 👇️ Reset form here
+	  form.reset();
+	});
+		
 
 		const task_el = document.createElement('div');
 		task_el.classList.add('task');
@@ -63,23 +82,6 @@ window.addEventListener('load', () => {
 
     // console.log(task);
 
-
-      var itemList = document.getElementsByClassName("text");
-      [].forEach.call(itemList, function(el) {
-          // print(el.value);
-          
-      });
-      
-const form = document.getElementById('new-task-form');
-form.addEventListener('submit', function handleSubmit(event) {
-  event.preventDefault();
-
-  // 👇️ Send data to server here
-
-  // 👇️ Reset form here
-  form.reset();
-});
-    
 
 
     // var itemList = document.getElementsByClassName("text");
