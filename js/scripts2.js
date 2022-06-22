@@ -18,8 +18,8 @@ window.addEventListener('load', () => {
     }
 
 
-	var itemList = document.getElementById("new-task-input");
-	alert("'"+ itemList.value + "'" + " " + "has been added");
+	// var itemList = document.getElementById("new-task-input");
+	// alert("'"+ itemList.value + "'" + " " + "has been added");
 		  
 	document.getElementById('new-task-input').value='';
 
@@ -110,7 +110,7 @@ today = mm + '/' + dd + '/' + yyyy;
 document.write(today);
 
 
-
+console.log('end of script')
 
 
 
