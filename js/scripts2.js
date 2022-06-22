@@ -57,13 +57,13 @@ window.addEventListener('load', () => {
 
 // NEED HELP HERE
 
-    rawValue = document.getElementsByClassName("text").text;
+    rawValue = document.getElementsByClassName("text").value;
 
     displayList = rawValue
     
     var id = document.getElementsByClassName("text");
     if (id.length > 0) {
-        alert (id[0].text);
+        alert (id[0].value);
     }
     
     
