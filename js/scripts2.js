@@ -1,3 +1,5 @@
+
+
 window.addEventListener('load', () => {
 	const form = document.querySelector("#new-task-form");
 	const input = document.querySelector("#new-task-input");
@@ -9,7 +11,7 @@ window.addEventListener('load', () => {
 		const task = input.value;
 
     if (!task) {
-      alert("Please fill form")
+      alert("Empty")
       return;
     }
 
@@ -58,14 +60,35 @@ window.addEventListener('load', () => {
 // HELP HERE
 // I want to be able to grab all values that are currently on the page
 
-    var itemList = document.getElementsByClassName("text");
-    [].forEach.call(itemList, function(el) {
-        console.log(el.value);
-    });
+
+    // console.log(task);
+
+
+      var itemList = document.getElementsByClassName("text");
+      [].forEach.call(itemList, function(el) {
+          // print(el.value);
+          
+      });
+      
+const form = document.getElementById('new-task-form');
+form.addEventListener('submit', function handleSubmit(event) {
+  event.preventDefault();
+
+  // 👇️ Send data to server here
+
+  // 👇️ Reset form here
+  form.reset();
+});
+    
+
+
+    // var itemList = document.getElementsByClassName("text");
+    // [].forEach.call(itemList, function(el) {
+    //     print(el.value);
+        
+    // });
   
-
-
-
+    // myFunction();
 
 
     
@@ -85,11 +108,20 @@ window.addEventListener('load', () => {
 			list_el.removeChild(task_el);
 
 
-      console.log(list_el);
+    //   console.log(list_el);
 
 		});
 	});
 });
+
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+today = mm + '/' + dd + '/' + yyyy;
+document.write(today);
+
 
 
 
