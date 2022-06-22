@@ -50,23 +50,24 @@ window.addEventListener('load', () => {
 
 		list_el.appendChild(task_el);
 
-		let rawValue = input.value ;
+		let rawValue = input.value;
 
-    rawValue = [];
-
-
+    rawValue = "";
 
 
-// NEED HELP HERE
+// HELP HERE
+// I want to be able to grab all values that are currently on the page
 
-    rawValue = document.getElementsByClassName("text");
+    var itemList = document.getElementsByClassName("text");
+    [].forEach.call(itemList, function(el) {
+        console.log(el.value);
+    });
+  
 
-    
-    var id = document.getElementsByClassName("text");
-    for (let i = 0; i < rawValue.length; i++ )
-    { 
-      console.log(rawValue[i].value);
-    }
+
+
+
+
     
 
 		task_edit_el.addEventListener('click', (e) => {
