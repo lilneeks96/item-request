@@ -90,6 +90,16 @@ input, button {
 	font-size: 1.25rem;
 }
 
+#howMany-input {
+	flex: 0%;
+	background-color: var(--darker);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: var(--light);
+	font-size: .75rem;
+}
+
 #new-task-input::placeholder {
 	color: var(--grey);
 }

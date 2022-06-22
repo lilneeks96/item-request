@@ -15,6 +15,7 @@ window.addEventListener('load', () => {
 
 
 
+
 		const task_el = document.createElement('div');
 		task_el.classList.add('task');
 
@@ -51,6 +52,20 @@ window.addEventListener('load', () => {
 
 		input.value = '';
 
+    // console.log(list_el);
+
+    rawValue = document.getElementsByClassName("content").value;
+
+    displayList = rawValue
+
+    var id = document.getElementsByClassName("task");
+    if (id.length > 0) {
+        alert (id[0].value);
+    }
+
+    console.log(displayList);
+
+
 		task_edit_el.addEventListener('click', (e) => {
 			if (task_edit_el.innerText.toLowerCase() == "edit") {
 				task_edit_el.innerText = "Save";
@@ -67,3 +82,17 @@ window.addEventListener('load', () => {
 		});
 	});
 });
+
+
+
+
+
+
+
+
+
+// function overlay()
+// {
+//     var cookieValue = document.getElementById('tasks').getAttribute('text');
+//     alert(cookieValue);
+// }
