@@ -13,29 +13,16 @@ window.addEventListener('load', () => {
 		const task = input.value;
 
     if (!task) {
-      alert("Empty")
+      alert("Error::Empty Form")
       return;
     }
 
 
-	var itemList = document.getElementsByClassName("text");
-	[].forEach.call(itemList, function(el) {
-		// print(el.value);
-		
-	});
+	var itemList = document.getElementById("new-task-input");
+	alert("'"+ itemList.value + "'" + " " + "has been added");
 		  
 	document.getElementById('new-task-input').value='';
-	
-	// const form = document.getElementById('new-task-form');
-	// form.addEventListener('submit', function handleSubmit() {
 
-	
-	//   // 👇️ Send data to server here
-	
-	//   // 👇️ Reset form here
-	//   form.reset();
-	// });
-		
 
 		const task_el = document.createElement('div');
 		task_el.classList.add('task');
@@ -71,9 +58,7 @@ window.addEventListener('load', () => {
 
 		list_el.appendChild(task_el);
 
-		let rawValue = input.value;
-
-    rawValue = "";
+	    input.value = "";
 
 
 // HELP HERE
