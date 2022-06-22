@@ -52,18 +52,21 @@ window.addEventListener('load', () => {
 
 		input.value = '';
 
-    // console.log(list_el);
 
-    rawValue = document.getElementsByClassName("content").value;
+
+
+// NEED HELP HERE
+
+    rawValue = document.getElementsByClassName("text").text;
 
     displayList = rawValue
-
-    var id = document.getElementsByClassName("task");
+    
+    var id = document.getElementsByClassName("text");
     if (id.length > 0) {
-        alert (id[0].value);
+        alert (id[0].text);
     }
-
-    console.log(displayList);
+    
+    
 
 
 		task_edit_el.addEventListener('click', (e) => {
@@ -91,8 +94,4 @@ window.addEventListener('load', () => {
 
 
 
-// function overlay()
-// {
-//     var cookieValue = document.getElementById('tasks').getAttribute('text');
-//     alert(cookieValue);
-// }
+
