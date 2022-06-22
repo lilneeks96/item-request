@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script language="Javascript" type="text/javascript" src="js/scripts2.js"></script>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,63 +9,46 @@
     <title>youtube clone - front end</title>
   </head>
   <body>
-
-    <div id="text" >
-      <h1>
-        Recipe 1
-      </h1>
-        <p id="hide1">
-          Step - 1 
-        </p>
-
-        <p id="hide2">
-          Step - 2
-        </p>
-
-        <p id="hide3">
-          Step - 3
-        </p>
-
-        <p id="hide4">
-          Step - 4
-        </p>
-
-        <p id="hide5">
-          Step - 5
-        </p>
-
-        <button class="sub-btn">
-          SUBSCRIBE
-        </button>
-        <button class="join-btn">
-          JOIN
-        </button>
-
-        <button class="tweet-btn">
-          Tweet
-        </button>
-        
-
-<!-- 
-        <a href="https://www.amazon.com"*>
-          Back to Amazon
-        </a> -->
-
-        <!-- <h1>Men's Shoes</h1>
-
-        <h2>Nike Air Force 1</h2>
-        <p>$39 - in stock.</p>
-        <p>Free Delivery tomorrow.</p>
-
-        <input type="button" id="add2cart" value="Add to Cart">
-        <input type="button" id="buynow" value="Buy Now"> -->
-
-
-
-        <br>
-          <input type="button" id="next-btn" value="Next">    
-    </div>    
-
+	
+    <header>
+      <h1>Office Supplies</h1>
+      <form id="new-task-form">
+        <input 
+          type="text" 
+          name="new-task-input" 
+          id="new-task-input" 
+          placeholder="What do you have planned?" />
+        <input 
+          type="submit"
+          id="new-task-submit" 
+          value="Add task" />
+      </form>
+    </header>
+    <main>
+      <section class="task-list">
+        <h2>Tasks</h2>
+  
+        <div id="tasks">
+  
+          <!-- <div class="task">
+            <div class="content">
+              <input 
+                type="text" 
+                class="text" 
+                value="A new task"
+                readonly>
+            </div>
+            <div class="actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div> -->
+  
+        </div>
+      </section>
+    </main>
+  
+    <script src="main.js"></script>
   </body>
-  <script language="Javascript" type="text/javascript" src="js/scripts2.js"></script>
+
 </html>
