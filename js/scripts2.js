@@ -24,17 +24,17 @@ window.addEventListener('load', () => {
 		
 	});
 		  
+	document.getElementById('new-task-input').value='';
+	
+	// const form = document.getElementById('new-task-form');
+	// form.addEventListener('submit', function handleSubmit() {
 
 	
-	const form = document.getElementById('new-task-form');
-	form.addEventListener('submit', function handleSubmit() {
-
+	//   // 👇️ Send data to server here
 	
-	  // 👇️ Send data to server here
-	
-	  // 👇️ Reset form here
-	  form.reset();
-	});
+	//   // 👇️ Reset form here
+	//   form.reset();
+	// });
 		
 
 		const task_el = document.createElement('div');
