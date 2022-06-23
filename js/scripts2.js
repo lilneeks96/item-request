@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
 
 
 	var itemList = document.getElementById("new-task-input");
-	alert("'"+ itemList.value + "'" + " " + "has been added");
+	// alert("'"+ itemList.value + "'" + " " + "has been added");
 		  
 	document.getElementById('new-task-input').value='';
 
