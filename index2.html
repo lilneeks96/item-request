@@ -1,28 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script language="Javascript" type="text/javascript" src="js/scripts2.js"></script>
+
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>youtube clone - front end</title>
+    <title>Office Supply Request</title>
   </head>
   <body>
-    <div>
-    <h1>Recipe 1</h1>
-        <p id="hide">step 1</p>
-        <p id="hide">step 2</p>
-        <p id="hide">step 3</p>
-        <p id="hide">step 4</p>
-        <p id="hide">step 5</p>
-            <button type="button" id="next-btn" value="Next"></button>
-    </div>    
+	
 
-
-    <!-- <h1>Recipe 2</h1>
-    <h1>Recipe 3</h1>
-    <h1>Recipe 4</h1> -->
+    
+    <header>
+      <h1>Office Supplies</h1>
+      <form id="new-task-form">
+        <input 
+          type="text" 
+          name="new-task-input" 
+          id="new-task-input" 
+          placeholder="Type Here"/>
+          <!-- <input type="number" placeholder="Quantity" id="howMany-input" min="1" max="99" /> -->
+        <input 
+          type="submit"
+          id="new-task-submit" 
+          value="Request Item"/>
+      </form>
+    </header>
+    <main>
+      <section class="task-list">
+        <h2>Requested Items</h2>
+  
+        <div id="tasks">
+  
+          <!-- <div class="task">
+            <div class="content">
+              <input 
+                type="text" 
+                class="text" 
+                value="A new task"
+                readonly>
+            </div>
+            <div class="actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div> -->
+  
+        </div>
+      </section>
+    </main>
 
   </body>
-  <script language="Javascript" type="text/javascript" src="js/scripts2.js"></script>
 </html>

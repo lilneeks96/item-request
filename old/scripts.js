@@ -54,7 +54,7 @@ var updateUsername = document.getElementById('username_list').addEventListener('
 // });
 
 
-var updateDate = document.getElementById("howMany").addEventListener('change', function(e) {
+var updatehowMany = document.getElementById("howMany").addEventListener('change', function(e) {
     document.getElementById("howMany_display").innerHTML = document.getElementById('howMany').value;
     
 });
