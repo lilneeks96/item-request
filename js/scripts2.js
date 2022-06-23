@@ -60,15 +60,19 @@ window.addEventListener('load', () => {
 
     // console.log(task);
 
-
+	itemArray = [];
 
     var itemList = document.getElementsByClassName("text");
     [].forEach.call(itemList, function(el) {
-        console.log(el.value);
+		// console.log(el.value);
+		itemArray.push(el.value);
+		
         
     });
-  
+	
     // myFunction();
+
+	console.log(itemArray);
 
 
     
