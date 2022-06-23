@@ -154,7 +154,7 @@ function ValidURL(str) {
           }
           
           document.getElementById("showurls").innerHTML = thisList;
-      console.log('function cosmpleted')
+      console.log('function completed')
     }
   }
 
