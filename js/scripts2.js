@@ -1,7 +1,3 @@
-
-
-
-
 window.addEventListener('load', () => {
 	const form = document.querySelector("#new-task-form");
 	const input = document.querySelector("#new-task-input");
@@ -16,13 +12,8 @@ window.addEventListener('load', () => {
       alert("ERROR!")
       return;
     }
-
-
-	// var itemList = document.getElementById("new-task-input");
-	// alert("'"+ itemList.value + "'" + " " + "has been added");
-		  
+		
 	document.getElementById('new-task-input').value='';
-
 
 		const task_el = document.createElement('div');
 		task_el.classList.add('task');
