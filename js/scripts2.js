@@ -1,3 +1,5 @@
+
+
 window.addEventListener('load', () => {
 	const form = document.querySelector("#new-task-form");
 	const input = document.querySelector("#new-task-input");
@@ -60,11 +62,11 @@ window.addEventListener('load', () => {
 
 
 
-    // var itemList = document.getElementsByClassName("text");
-    // [].forEach.call(itemList, function(el) {
-    //     print(el.value);
+    var itemList = document.getElementsByClassName("text");
+    [].forEach.call(itemList, function(el) {
+        console.log(el.value);
         
-    // });
+    });
   
     // myFunction();
 
